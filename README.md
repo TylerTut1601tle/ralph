@@ -79,9 +79,11 @@ Add to `~/.config/amp/settings.json`:
 
 ```json
 {
-  "amp.experimental.autoHandoff": { "context": 90 }
+  "amp.experimental.autoHandoff": { "context": 80 }
 }
 ```
+
+> **Note (personal preference):** I lowered the context threshold from 90 to 80 to give Ralph a bit more headroom before handoff, which seems to reduce mid-task context issues on larger stories.
 
 This enables automatic handoff when context fills up, allowing Ralph to handle large stories that exceed a single context window.
 
@@ -110,19 +112,5 @@ This creates `prd.json` with user stories structured for autonomous execution.
 ### 3. Run Ralph
 
 ```bash
-# Using Amp (default)
-bash scripts/ralph/ralph.sh
-
-# Using Claude Code
-bash scripts/ralph/ralph.sh --tool claude
-```
-
-> **Tip:** I usually keep a terminal window open just for Ralph and let it run while I work on something else. Check back when it finishes or stalls.
-
-### 4. Review progress
-
-Ralph updates `progress.txt` after each iteration. Check it anytime to see what has been completed and what remains.
-
-```bash
-cat progress.txt
+# Using Amp (defaul
 ```
