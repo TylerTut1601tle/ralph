@@ -45,4 +45,5 @@ npm run dev
 - Memory persists via git history, `progress.txt`, and `prd.json`
 - Stories should be small enough to complete in one context window
 - Always update AGENTS.md with discovered patterns for future iterations
-- Default max_iterations is 10; I typically use 5 for small tasks to avoid runaway loops
+- Default max_iterations is 10; I typically use 3 for small tasks to avoid runaway loops
+- If a task feels stuck after 2 iterations, it's usually a sign the story needs to be broken down further
