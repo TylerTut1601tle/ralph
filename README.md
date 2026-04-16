@@ -79,11 +79,11 @@ Add to `~/.config/amp/settings.json`:
 
 ```json
 {
-  "amp.experimental.autoHandoff": { "context": 80 }
+  "amp.experimental.autoHandoff": { "context": 75 }
 }
 ```
 
-> **Note (personal preference):** I lowered the context threshold from 90 to 80 to give Ralph a bit more headroom before handoff, which seems to reduce mid-task context issues on larger stories.
+> **Note (personal preference):** I lowered the context threshold to 75 (from the upstream default of 80) because I found that on larger stories with many files, 80 was still occasionally causing mid-task context issues. 75 gives a bit more breathing room.
 
 This enables automatic handoff when context fills up, allowing Ralph to handle large stories that exceed a single context window.
 
@@ -104,13 +104,5 @@ Answer the clarifying questions. The skill saves output to `tasks/prd-[feature-n
 Use the Ralph skill to convert the markdown PRD to JSON:
 
 ```
-Load the ralph skill and convert tasks/prd-[feature-name].md to prd.json
-```
-
-This creates `prd.json` with user stories structured for autonomous execution.
-
-### 3. Run Ralph
-
-```bash
-# Using Amp (defaul
+Load th
 ```
