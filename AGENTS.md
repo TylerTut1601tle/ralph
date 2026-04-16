@@ -16,7 +16,7 @@ cd flowchart && npm run build
 # Run Ralph with Amp (default)
 ./ralph.sh [max_iterations]
 
-# Run Ralph with Claude Code
+# Run Ralph with Claude Code (my preferred tool)
 ./ralph.sh --tool claude [max_iterations]
 ```
 
@@ -45,3 +45,4 @@ npm run dev
 - Memory persists via git history, `progress.txt`, and `prd.json`
 - Stories should be small enough to complete in one context window
 - Always update AGENTS.md with discovered patterns for future iterations
+- Default max_iterations is 10; I typically use 5 for small tasks to avoid runaway loops
