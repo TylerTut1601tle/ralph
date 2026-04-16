@@ -79,11 +79,11 @@ Add to `~/.config/amp/settings.json`:
 
 ```json
 {
-  "amp.experimental.autoHandoff": { "context": 70 }
+  "amp.experimental.autoHandoff": { "context": 65 }
 }
 ```
 
-> **Note (personal preference):** I lowered the context threshold to 70 (from the upstream default of 80) because I found that 75-80 still occasionally caused mid-task context issues on complex projects with lots of file changes. 70 gives noticeably more breathing room and I haven't seen any downsides in practice.
+> **Note (personal preference):** I lowered the context threshold to 65 (from the upstream default of 80) because on larger projects with many interdependent files I was still seeing context issues at 70. 65 feels like the sweet spot for me — enough breathing room without triggering handoffs too aggressively on smaller tasks.
 
 This enables automatic handoff when context fills up, allowing Ralph to handle large stories that exceed a single context window.
 
@@ -97,8 +97,5 @@ Use the PRD skill to generate a detailed requirements document:
 Load the prd skill and create a PRD for [your feature description]
 ```
 
-Answer the clarifying questions. The skill saves output to `tasks/prd-[feature-name].md`.
-
-### 2. Convert PRD to Ralph format
-
-Use the
+Answer the clarifying questions. The skill saves output to `tasks/prd-[feat
+```
