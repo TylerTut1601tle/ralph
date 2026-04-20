@@ -72,5 +72,6 @@ Only update CLAUDE.md if you have **genuinely reusable knowledge** that would he
 
 ## Personal Notes
 
-<!-- Forked for personal learning. Prefer smaller, focused commits over bundling unrelated changes.
-     When in doubt, implement the simplest thing that makes the story pass rather than over-engineering. -->
+<!-- Personal reminders for my fork -->
+- After finishing a session, double-check `progress.txt` is committed — easy to forget when iterating quickly.
+- If the test suite is slow, run a single focused test first with `--testNamePattern` before running the full suite.
