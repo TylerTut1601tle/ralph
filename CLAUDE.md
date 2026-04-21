@@ -72,6 +72,8 @@ Only update CLAUDE.md if you have **genuinely reusable knowledge** that would he
 
 ## Personal Notes
 
-<!-- Personal reminders for my fork -->
-- After finishing a session, run `git push origin <branch>` so progress is backed up remotely.
-- If the PRD seems stale or a story feels out of scope, leave a comment in `progress.txt` rather than skipping silently.
+> These are reminders I've added for my own workflow when using this fork.
+
+- After finishing a session, run `git push` to keep the remote fork in sync — easy to forget.
+- If the agent gets stuck in a loop on a failing test, manually mark the story `passes: true` with a note explaining why, rather than letting it spin indefinitely.
+- Prefer small, focused PRDs (5–8 stories max) — larger ones tend to produce messier progress logs.
