@@ -73,5 +73,5 @@ Only update CLAUDE.md if you have **genuinely reusable knowledge** that would he
 ## Personal Notes
 
 <!-- Personal reminders for my fork -->
-- After finishing a session, double-check `progress.txt` is committed — easy to forget when iterating quickly.
-- If the test suite is slow, run a single focused test first with `--testNamePattern` before running the full suite.
+- After finishing a session, run `git push origin <branch>` so progress is backed up remotely.
+- If the PRD seems stale or a story feels out of scope, leave a comment in `progress.txt` rather than skipping silently.
